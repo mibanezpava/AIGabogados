@@ -19,6 +19,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
 }
 
 header {
@@ -31,9 +32,16 @@ header {
 }
 
 .contenedor{
-  padding: 100px 50px;
+  padding: 50px 50px;
   background: white;
   position: center;
+}
+h1{
+  line-height: 4em;
+}
+
+.contenedor p{
+  text-align: justify;
 }
 
 footer {
