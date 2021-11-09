@@ -11,89 +11,106 @@
     src: url("../font/Futura/FuturaStd-Light.otf");
 }
 
-.fondo {
+/*.fondo {
   /* Ubicación de la imagen */
-  min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  /*min-height: 100vh;
+  background-image: rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),
     url(../img/backgro.JPG);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  
 
+}*/
+
+section{
+
+    background: url(../img/backgro.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: calc(100vh - 80px);
+
+   
 }
 
 header {
   
-  background: black;
-  opacity: 30%;
+  background: black;  
   height: 120px;
   width: 100%;
 
 }
 
+.footer_text{
+
+  text-align: center;
+  color: white;
+}
+
+nav {
+background: black;
+opacity: 30%;
+height: 120px;
+width: 100%; 
+
+}
+.enlace {
+position: absolute;
+padding: 20px 50px;
+}
+
+.logo {
+
+  height: 80px;
+
+}
+nav ul {
+float: right;
+margin-right: 20px;
+}
+nav ul li {
+display: inline-block;
+line-height: 80px;
+margin: 0px;
+}
+
+nav ul li a {
+color: white;
+font-size: 18px;
+padding: 7px 18px;
+border-radius: 3px;
+/*text-transform: uppercase;*/
+font-family: "FuturaStd-Bold";
+text-decoration: none;
+}
+
+
 .contenedor{
   padding: 50px 50px;
-  background: white;
   position: center;
 }
 h1{
   line-height: 4em;
+  color: whitesmoke;
 }
 
 .contenedor p{
   text-align: justify;
+  color: white;
 }
 
 footer {
-    background-color: rgb(51, 44, 139);
+    padding: 10px 10px;
+    background-color:lightslategray;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    height: 50px;
     
   }
 
-.footer_text{
 
-    text-align: center;
-    color: white;
-}
-
-nav {
-  background: black;
-  opacity: 30%;
-  height: 120px;
-  width: 100%; 
-
-}
-.enlace {
-  position: absolute;
-  padding: 20px 50px;
-}
-
-.logo {
-  
-    height: 80px;
-
-}
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0px;
-}
-
-nav ul li a {
-  color: white;
-  font-size: 18px;
-  padding: 7px 18px;
-  border-radius: 3px;
-  /*text-transform: uppercase;*/
-  font-family: "FuturaStd-Bold";
-}
 
 li a.active, li a:hover{
 
@@ -115,13 +132,7 @@ li a.active, li a:hover{
     display: none;
 }
 
-section{
 
-    background: url(../img/backgro.JPG);
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
-}
 
 div .TextoBody{
 
