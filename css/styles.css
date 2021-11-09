@@ -1,19 +1,19 @@
 * {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "FuturaStd-Bold";
-    src: url("../font/Futura/FuturaStd-Light.otf");
+  font-family: "FuturaStd-Bold";
+  src: url("../font/Futura/FuturaStd-Light.otf");
 }
 
 /*.fondo {
   /* Ubicación de la imagen */
-  /*min-height: 100vh;
+/*min-height: 100vh;
   background-image: rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),
     url(../img/backgro.JPG);
   background-repeat: no-repeat;
@@ -23,119 +23,102 @@
 
 }*/
 
-section{
-
-    background: url(../img/backgro.JPG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: calc(100vh - 80px);
-
-   
+section {
+  background: url(../img/backgro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: calc(100vh - 80px);
 }
 
 header {
-  
-  background: black;  
+  background: black;
   height: 120px;
   width: 100%;
-
 }
 
-.footer_text{
-
+.footer_text {
   text-align: center;
   color: white;
 }
 
 nav {
-background: black;
-opacity: 30%;
-height: 120px;
-width: 100%; 
-
+  background: black;
+  opacity: 30%;
+  height: 120px;
+  width: 100%;
 }
 .enlace {
-position: absolute;
-padding: 20px 50px;
+  position: absolute;
+  padding: 20px 50px;
 }
 
 .logo {
-
   height: 80px;
-
 }
 nav ul {
-float: right;
-margin-right: 20px;
+  float: right;
+  margin-right: 20px;
 }
 nav ul li {
-display: inline-block;
-line-height: 80px;
-margin: 0px;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px;
 }
 
 nav ul li a {
-color: white;
-font-size: 18px;
-padding: 7px 18px;
-border-radius: 3px;
-/*text-transform: uppercase;*/
-font-family: "FuturaStd-Bold";
-text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 7px 18px;
+  border-radius: 3px;
+  /*text-transform: uppercase;*/
+  font-family: "FuturaStd-Bold";
+  text-decoration: none;
+  
 }
 
-
-.contenedor{
+.contenedor {
   padding: 50px 50px;
   position: center;
 }
-h1{
+h1 {
   line-height: 4em;
   color: whitesmoke;
 }
 
-.contenedor p{
+.contenedor p {
   text-align: justify;
   color: white;
 }
 
 footer {
-    padding: 10px 10px;
-    background-color:lightslategray;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    
-  }
-
-
-
-li a.active, li a:hover{
-
-    background: rgb(59, 56, 56);
-
-}
-.checkbtn{
-
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+  padding: 10px 10px;
+  background-color: lightslategray;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
 
-#check{
-    display: none;
+li a.active,
+li a:hover {
+  background: rgb(59, 56, 56);
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 
+#check {
+  display: none;
+}
 
-
-div .TextoBody{
-
+div .TextoBody {
   background-color: #ffffff;
   text-align: center;
   position: relative;
@@ -144,60 +127,48 @@ div .TextoBody{
   background-size: cover;
 }
 
+@media (max-width: 980px) {
+  .enlace {
+    padding-left: 20px;
+  }
 
-@media (max-width: 980px){
-
-    .enlace{
-        padding-left: 20px;
-    }
-
-    nav ul li a{
-
-        font-size: 16px;
-
-    }
+  nav ul li a {
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 858px){
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
 
-    .checkbtn{
-        display: block;
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
 
-    }
-    ul{
+  nav ul li a {
+    font-size: 20px;
+  }
 
-        position:fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50 ;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
+  li a:hover,
+  li a.active {
+    background: none;
+    color: white;
+  }
 
-    }
-
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 10px;
-
-    }
-
-    nav ul li a{
-font-size: 20px;
-        
-    }
-
-    li a:hover, li a.active{
-        background: none;
-        color: white
-    }
-
-    #check:checked ~ ul{
-
-        left: 0;
-    }
-    
-
+  #check:checked ~ ul {
+    left: 0;
+  }
 }
